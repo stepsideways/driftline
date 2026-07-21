@@ -1,21 +1,24 @@
 # Security Policy
 
-## Supported Versions
+## Supported versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+driftline is a 0.1.x demonstration library. Only the latest release on `main`
+receives fixes.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported |
+|---|---|
+| 0.1.x (latest) | yes |
+| earlier | no |
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Report privately through GitHub Security Advisories: the "Report a
+vulnerability" button on this repository's Security tab. You can expect an
+acknowledgment within 7 days.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Scope note: the library is pure standard-library Python with no network
+surface, no file I/O, and no dependencies, so the realistic vulnerability
+classes are narrow (algorithmic or numerical defects rather than injection or
+transport issues). Reports of incorrect statistical behavior with a
+reproducible case are welcome through the same channel or as a public issue,
+whichever fits the sensitivity.
